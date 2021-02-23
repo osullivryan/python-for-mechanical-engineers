@@ -1,0 +1,18 @@
+site_name: Python for Mechanical Engineers
+nav:
+    - Home: index.md
+    - Environment:
+      - Installing Tooling: environment/installing-tools.md
+    - Development:
+      - Starting A Project: development/project-structure.md
+      - Configuring VSCode: development/vs-code-new.md
+      - Formatting Your Code: development/formatting-code.md
+      - Testing: development/testing-code.md
+    - Deployment:
+      - Automated Testing: deployment/ci.md
+      - Automated Deployment: deployment/cd.md
+theme: material
+icon:
+  logo: material/library
+markdown_extensions:
+  - admonition
