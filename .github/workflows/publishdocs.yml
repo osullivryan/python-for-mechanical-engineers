@@ -20,6 +20,7 @@ jobs:
         run: |
           # install pip=>20.1 to use "pip cache dir"
           python3 -m pip install --upgrade pip
+          python3 -m pip install mkdocs
 
       - run: mkdocs build
 
@@ -27,4 +28,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          publish_dir: ./docs
