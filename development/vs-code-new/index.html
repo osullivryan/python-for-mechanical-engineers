@@ -14,7 +14,7 @@
     
     
       
-        <title>Testing - Python for Mechanical Engineers</title>
+        <title>Configuring VSCode - Python for Mechanical Engineers</title>
       
     
     
@@ -57,6 +57,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#visual-studio-code" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -85,7 +90,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Testing
+              Configuring VSCode
             
           </span>
         </div>
@@ -260,11 +265,63 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../vs-code-new/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Configuring VSCode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Configuring VSCode
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#opening-up-a-project-from-scratch" class="md-nav__link">
+    Opening up a Project from Scratch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-a-workspace" class="md-nav__link">
+    Saving a Workspace
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-your-python-interpreter" class="md-nav__link">
+    Setting your Python Interpreter
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -284,18 +341,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../testing-code/" class="md-nav__link">
         Testing
       </a>
-      
     </li>
   
 
@@ -368,15 +418,78 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#opening-up-a-project-from-scratch" class="md-nav__link">
+    Opening up a Project from Scratch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-a-workspace" class="md-nav__link">
+    Saving a Workspace
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-your-python-interpreter" class="md-nav__link">
+    Setting your Python Interpreter
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Testing</h1>
-                
-                
+                <h1 id="visual-studio-code">Visual Studio Code</h1>
+<p>VSCode setup should be quite straightforward! These are a handful of helpful hints and tips. </p>
+<h2 id="opening-up-a-project-from-scratch">Opening up a Project from Scratch</h2>
+<p>From within the project directory you should type the command:</p>
+<pre><code class="language-bash">code .
+</code></pre>
+<p><code>code</code> is the command for VSCode, and the <code>.</code> opens VSCode in the current directory. It should look something like this:</p>
+<p><img alt="open-vscode" src="../sources/vscode-open.png" /></p>
+<h2 id="saving-a-workspace">Saving a Workspace</h2>
+<p>Workspaces save your setting so you can configure VSCode in different ways depending on what you're working on.</p>
+<p>Go to:</p>
+<ol>
+<li><code>File</code> -&gt; <code>Add Folder to Workspace...</code> and select the <strong>current directory</strong>. </li>
+<li>Then <code>File</code> -&gt; <code>Save Workspace As...</code> and select the <strong>current directory</strong>. </li>
+</ol>
+<h2 id="setting-your-python-interpreter">Setting your Python Interpreter</h2>
+<p>The first time you open a project in VSCode the Python extension will look around for a Python interpreter. We're going to select the one we created from the <code>poetry install</code> command, which should be <em>local in this current directory under .venv</em>.</p>
+<p>Select the option for interpreters at the bottom left of the window.</p>
+<p><img alt="select-interp" src="../sources/vscode-select-interpreter.png" /></p>
+<p>Then select the local <code>.venv/</code> interpreter. You might have quite a few here depending on your environment. We want the one for this project only.</p>
+<p><img alt="local-interp" src="../sources/vscode-venv.png" /></p>
                 
               
               
@@ -394,7 +507,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../formatting-code/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../project-structure/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -403,19 +516,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Formatting Your Code
+              Starting A Project
             </div>
           </div>
         </a>
       
       
-        <a href="../../deployment/ci/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../formatting-code/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Automated Testing
+              Formatting Your Code
             </div>
           </div>
           <div class="md-footer__button md-icon">
