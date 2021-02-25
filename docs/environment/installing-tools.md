@@ -51,7 +51,7 @@ Poetry version 1.1.4
     It's best practice to have poetry create the environments within the package directory. Use the following command to do so:
 
     ```bash
-    poetry config virtualenvs.create false --local
+    poetry config virtualenvs.in-project true
     ```
 
 

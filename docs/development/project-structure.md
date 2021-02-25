@@ -117,3 +117,19 @@ And you should be able to start python by running the following:
 ```bash
 poetry run python
 ```
+
+## Installing Packages
+
+Like pip, poetry will add packages that you can use in your environment. We're going to need a couple for this project:
+
+```bash
+poetry add numpy, matplotlib, scipy
+```
+
+Great! I'll go over the packages we just installed later, but as a Mechanical Engineer you'll probably be using those fairly often. 
+
+Now let's add some packages that are really useful for writing code. Again, I'll explain them later.
+
+```bash
+poetry add black, flake8, pytest
+```
